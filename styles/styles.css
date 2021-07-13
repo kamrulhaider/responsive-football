@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #2d25a0;
+  margin-bottom: 70px;
 }
 .container {
   width: 1161px;
@@ -55,7 +56,7 @@ body {
 
 /* image hover effect using animation */
 .banner-img:hover {
-  animation: shake 0.5s;
+  animation: shake 1s;
   animation-iteration-count: 5;
 }
 @keyframes shake {
@@ -92,4 +93,36 @@ body {
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+/* player section styles */
+.players-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 30px;
+}
+.player {
+  height: 474px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  margin-bottom: 27px;
+}
+.player img {
+  width: 300px;
+  height: 256px;
+}
+.player-name {
+  font-size: 28px;
+  color: #18191f;
+}
+.player-info {
+  font-size: 16px;
+  color: #6c6c6c;
+  width: 300px;
 }
