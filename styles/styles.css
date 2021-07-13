@@ -158,3 +158,26 @@ footer {
   font-size: 18px;
   color: #000000;
 }
+
+/* media queries */
+/* mobile devices */
+@media only screen and (max-width: 688px) {
+  .banner-details {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .banner-text h1 {
+    font-size: 36px;
+  }
+  .banner-img {
+    width: 329px;
+    height: 259.17px;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-logo img {
+    height: 63px;
+    width: 271px;
+  }
+}
