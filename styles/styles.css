@@ -165,7 +165,6 @@ body {
   background-color: #ffffff;
   margin-bottom: 70px;
 }
-
 .partners {
   width: 100%;
   display: grid;
@@ -174,7 +173,39 @@ body {
   grid-row-gap: 30px;
 }
 .partners a img {
+  width: 114px;
+  height: 57px;
+}
+
+/* vision styles */
+.vision {
+  height: 300px;
+  background-image: url(../images/vision.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vision-info {
   width: 50%;
+  text-align: center;
+}
+.v-text {
+  margin-top: 0;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.vision-info p {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.vision-info a {
+  text-align: center;
 }
 
 /* footer styles */
@@ -213,7 +244,9 @@ footer {
 /* mobile devices */
 @media only screen and (max-width: 688px) {
   .banner {
+    width: 100%;
     margin-bottom: 47px;
+    height: 550px;
   }
   .container {
     width: 100%;
@@ -227,11 +260,14 @@ footer {
     font-size: 36px;
   }
   .banner-img {
-    width: 329px;
-    height: 259.17px;
+    width: 80%;
   }
   .players {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .partners a img {
+    width: 50%;
+    height: 100%;
   }
   .highlights {
     margin: 0;
@@ -253,6 +289,21 @@ footer {
   .para {
     margin-left: 16px;
     width: 95%;
+  }
+  .vision {
+    width: 100%;
+    height: 200px;
+  }
+  .vision-info {
+    width: 100%;
+    text-align: left;
+  }
+  .v-text {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  .vision-info p {
+    display: none;
   }
   .footer-logo img {
     height: 63px;
@@ -293,5 +344,18 @@ footer {
   }
   iframe {
     display: none;
+  }
+  .vision {
+    width: 100%;
+    height: 300px;
+    margin-top: 70px;
+  }
+  .vision-info {
+    width: 80%;
+    text-align: center;
+  }
+  .v-text {
+    font-size: 30px;
+    margin-bottom: 16px;
   }
 }
