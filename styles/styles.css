@@ -8,7 +8,8 @@ body {
 }
 
 /* banner styles */
-.banner {
+.banner,
+.highlights {
   height: 677px;
   display: flex;
   justify-content: center;
@@ -33,7 +34,8 @@ body {
   color: #ffffff;
   margin-bottom: 27px;
 }
-.banner-text a {
+.banner-text a,
+.btn {
   text-decoration: none;
   font-size: 16px;
   color: #ffffff;
@@ -46,7 +48,8 @@ body {
   font-size: 16px;
   margin-left: 10px;
 }
-.banner-text a:hover {
+.banner-text a:hover,
+.btn:hover {
   color: black;
   background-color: #78abec;
 }
@@ -121,10 +124,33 @@ body {
   font-size: 28px;
   color: #18191f;
 }
-.player-info {
+.player-info,
+.para {
   font-size: 16px;
   color: #6c6c6c;
   width: 300px;
+}
+
+/* highlights styles */
+.highlights {
+  background-color: #ffffff;
+  margin: 70px 0;
+  height: 100%;
+}
+.highlights-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.text {
+  font-size: 48px;
+  color: #000000;
+}
+.para {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.btn {
+  margin-left: 0;
 }
 
 /* footer styles */
@@ -183,6 +209,25 @@ footer {
   .players {
     grid-template-columns: repeat(1, 1fr);
   }
+  .highlights {
+    margin: 0;
+  }
+  .highlights-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn {
+    margin-left: 16px;
+  }
+  iframe {
+    display: none;
+  }
+  .text {
+    font-size: 30px;
+    margin-left: 16px;
+  }
+  .para {
+    margin-left: 16px;
+  }
   .footer-logo img {
     height: 63px;
     width: 271px;
@@ -202,5 +247,25 @@ footer {
   }
   .players {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .highlights {
+    margin: 0;
+  }
+  .highlights-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .text {
+    font-size: 40px;
+    margin-left: 16px;
+  }
+  .para {
+    margin-left: 16px;
+    width: 95%;
+  }
+  .btn {
+    margin-left: 16px;
+  }
+  iframe {
+    display: none;
   }
 }
