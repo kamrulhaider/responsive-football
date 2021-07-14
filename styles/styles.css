@@ -143,10 +143,10 @@ footer {
 .social a i {
   color: #969bab;
   font-size: 32px;
+  transition: all 0.5s ease-in-out;
 }
 .social a:hover i {
   color: black;
-  transition: color 0.5s ease-in-out;
 }
 .fab {
   padding: 10px;
@@ -162,9 +162,16 @@ footer {
 /* media queries */
 /* mobile devices */
 @media only screen and (max-width: 688px) {
+  .banner {
+    margin-bottom: 47px;
+  }
+  .container {
+    width: 100%;
+  }
   .banner-details {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-left: 16px;
   }
   .banner-text h1 {
     font-size: 36px;
@@ -179,5 +186,21 @@ footer {
   .footer-logo img {
     height: 63px;
     width: 271px;
+  }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .banner-details {
+    margin-left: 16px;
+  }
+  .banner-text h1 {
+    font-size: 46px;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
