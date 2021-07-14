@@ -116,6 +116,10 @@ body {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   padding: 15px;
   margin-bottom: 27px;
+  transition: all 0.5s ease-in-out;
+}
+.player:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.822);
 }
 .player img {
   width: 300px;
@@ -299,8 +303,9 @@ footer {
     text-align: left;
   }
   .v-text {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 16px;
+    width: 85%;
   }
   .vision-info p {
     display: none;
@@ -313,6 +318,9 @@ footer {
 
 /* tablet devices */
 @media only screen and (min-width: 689px) and (max-width: 992px) {
+  .banner {
+    height: 450px;
+  }
   .container {
     width: 100%;
   }
@@ -321,6 +329,9 @@ footer {
   }
   .banner-text h1 {
     font-size: 46px;
+  }
+  .banner-img {
+    width: 50%;
   }
   .players {
     grid-template-columns: repeat(2, 1fr);
